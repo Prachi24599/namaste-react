@@ -20,6 +20,7 @@
  * ReactElement(Object) => HTML(Browser Understands)
  */
 
+// When we need to add sibling Element in html, Need to pass it in array
 const parent = React.createElement("div", { id: "parent" }, [
   React.createElement("div", { id: "child" }, [
     React.createElement("h1", {}, "This is h1 tag"),
