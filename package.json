@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Prachi24599/namaste-react/issues"
   },
-  "homepage": "https://github.com/Prachi24599/namaste-react#readme"
+  "homepage": "https://github.com/Prachi24599/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
 }
