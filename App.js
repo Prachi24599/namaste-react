@@ -12,7 +12,7 @@ const Title = function () {
 //Component Composition - Rendering one component inside another
 const HeadingComponent = () => (
     <div id="container">
-        <Title/>
+        {Title()}
         <h1 className="heading">Namaste React Functional Component</h1>
     </div>
 )
