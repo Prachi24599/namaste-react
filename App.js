@@ -15,6 +15,7 @@ const HeadingComponent = () => (
     <div id="container">
         <Tiitle/>
         <Tiitle></Tiitle>
+        { Tiitle() }
         <h1>Namaste React Functional Component</h1>
     </div>
 )
