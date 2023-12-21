@@ -1,19 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//We can write functional component in normal function also
-const Title = function () {
-    return (
-        <h1 className="heading" tabIndex="1">
-        Namaste React using JSX! 🚀
-        </h1>
-    );
-} 
-//Component Composition - Rendering one component inside another
+//JSX => React.createElement => JS Object => HTMLElement(render)
+
+const Title = () => (<h1 id="heading">
+    Namaste React using JSX 🚀
+    </h1>);
+
+
+const number = 10000;
+
+// Component Composition
 const HeadingComponent = () => (
     <div id="container">
-        {Title()}
-        <h1 className="heading">Namaste React Functional Component</h1>
+       <h2> {100 + 300}</h2> 
+        <h1 c>Namaste React Functional Component</h1>
     </div>
 )
 
