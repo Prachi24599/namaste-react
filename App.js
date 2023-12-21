@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 
 //JSX => React.createElement => JS Object => HTMLElement(render)
 
-const element = <span>Just Element</span>
+const element = <span>This is Span!!</span>
 
-const title = (<h1 id="heading">
+const Tiitle = () => (<h1 id="heading">
     {element}
     Namaste React using JSX 🚀
     </h1>);
@@ -13,7 +13,8 @@ const title = (<h1 id="heading">
 // Component Composition
 const HeadingComponent = () => (
     <div id="container">
-        {title}
+        <Tiitle/>
+        <Tiitle></Tiitle>
         <h1>Namaste React Functional Component</h1>
     </div>
 )
