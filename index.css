@@ -14,3 +14,8 @@
 .nav-items > ul > li{
   list-style-type: none;
 }
+
+.restaurant-card{
+  width: 200px;
+
+}
