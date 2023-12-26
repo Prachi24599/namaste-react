@@ -33,10 +33,26 @@ const Header = () => {
     )
 }
 
+
+const Body = () => {
+    return (
+        <div className="body">
+            <div className="search-container">
+                <input type="text"/>
+                <button>Search</button>
+            </div>
+            <div className="restaurant-container">
+                <RestaurantCard/>
+            </div>
+        </div>
+    )
+}
+
 const AppLayout = () => {
     return (
         <div className="app">
             <Header/>
+            <Body/>
         </div>
     )
 }
