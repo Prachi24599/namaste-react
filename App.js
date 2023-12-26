@@ -1,25 +1,46 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//JSX => React.createElement => JS Object => HTMLElement(render)
+/**
+ * Header
+ *  - Logo
+ *  - Nav Items
+ * Body
+ *  - Search 
+ *  - Restaurant Container
+ *      - Restaurant Card
+ * Footer
+ *  - Copyright
+ *  - Links
+ *  - Address
+ *  - Contact
+ */
 
-const element = <span>This is Span!!</span>
+const Header = () => {
+    return (
+        <div className="header">
+            <div className="logo-container">
+                <img className="logo" src=""/>
+            </div>
+            <div className="nav-items">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Cart</li>
+                </ul>
+            </div>
+        </div>
+    )
+}
 
-const Tiitle = () => (<h1 id="heading">
-    {element}
-    Namaste React using JSX 🚀
-    </h1>);
-
-// Component Composition
-const HeadingComponent = () => (
-    <div id="container">
-        <Tiitle/>
-        <Tiitle></Tiitle>
-        { Tiitle() }
-        <h1>Namaste React Functional Component</h1>
-    </div>
-)
+const AppLayout = () => {
+    return (
+        <div className="app">
+            <Header/>
+        </div>
+    )
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-root.render(<HeadingComponent/>);
+root.render(<AppLayout/>)
