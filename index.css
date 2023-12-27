@@ -1,6 +1,6 @@
 .header {
  display: flex;
- justify-content: space-around;
+ justify-content: space-between;
  align-items: center;
  border: 1px solid black;
 }
@@ -14,8 +14,11 @@
 .nav-items > ul > li{
   list-style-type: none;
 }
-
 .restaurant-card{
   width: 200px;
-
+  height: 300px;
+  border: 1px solid black;
+}
+.search-container{
+  margin: 20px 0;
 }

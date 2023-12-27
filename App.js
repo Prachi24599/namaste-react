@@ -37,7 +37,7 @@ const Header = () => {
 
 const RestaurantCard = () => {
     return (
-        <div className="restaurant-card">
+        <div className="restaurant-card" style={{backgroundColor : "#f0f0f0"}}>
             <h3>Meghana Foods</h3>
         </div>
     );
