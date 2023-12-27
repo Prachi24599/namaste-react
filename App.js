@@ -35,7 +35,8 @@ const Header = () => {
     )
 }
 
-const RestaurantCard = () => {
+const RestaurantCard = (props) => {
+    console.log(props);
     return (
         <div className="restaurant-card" style={{backgroundColor : "#f0f0f0"}}>
             <img className="restaurant-logo" alt="restaurant-logo" src="https://b.zmtcdn.com/data/pictures/3/20729743/bae5332c13de2e1df091fee03556efe4_o2_featured_v2.jpg?output-format=webp"/>
@@ -55,14 +56,8 @@ const Body = () => {
                 <button>Search</button>
             </div>
             <div className="restaurant-container">
-                <RestaurantCard/>
-                <RestaurantCard/>
-                <RestaurantCard/>
-                <RestaurantCard/>
-                <RestaurantCard/>
-                <RestaurantCard/>
-                <RestaurantCard/>
-                <RestaurantCard/>
+                <RestaurantCard resName="Meghana Foods" cuisine="Biryani, North Indian"/>
+                <RestaurantCard resName="KFC" cuisine="Burger, Fast Food" />
             </div>
         </div>
     )
