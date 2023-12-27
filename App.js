@@ -35,7 +35,8 @@ const Header = () => {
     )
 }
 
-const RestaurantCard = ({resName, cuisine}) => {
+const RestaurantCard = (props) => {
+    const {resName, cuisine} = props;
     console.log(resName, cuisine);
     return (
         <div className="restaurant-card" style={{backgroundColor : "#f0f0f0"}}>
