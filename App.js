@@ -17,6 +17,11 @@ import ReactDOM from "react-dom/client";
  *  - Contact
  */
 
+
+/**
+ * Config Driven UI - Which means controlling your UI using data and the config comes from backend.
+ */
+
 const Header = () => {
     return (
         <div className="header">
