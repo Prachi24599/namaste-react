@@ -41,17 +41,27 @@ const Header = () => {
 }
 
 const RestaurantCard = (props) => {
-    const {resName, cuisine} = props;
-    console.log(resName, cuisine);
+    console.log(props);
+    const { resData } = props?.data;
+    console.log(resData);
     return (
         <div className="restaurant-card" style={{backgroundColor : "#f0f0f0"}}>
             <img className="restaurant-logo" alt="restaurant-logo" src="https://b.zmtcdn.com/data/pictures/3/20729743/bae5332c13de2e1df091fee03556efe4_o2_featured_v2.jpg?output-format=webp"/>
-            <h3>{resName}</h3>
-            <h4>{cuisine}</h4>
-            <h4>4.4 stars</h4>
-            <h4>38 minutes</h4>
+            <h3>{resData?.data?.restaurantName}</h3>
+            <h4>{resData?.data?.cuisine}</h4>
+            <h4>{resData?.data?.rating} stars</h4>
+            <h4>{resData?.data?.deliveryTime} minutes</h4>
         </div>
     );
+}
+
+const resObj = {
+    data : {
+        restaurantName : "KFC",
+        cuisine : "Burger, Fast Food",
+        rating : 4.4,
+        deliveryTime : 38
+    }
 }
 
 const Body = () => {
@@ -62,8 +72,9 @@ const Body = () => {
                 <button>Search</button>
             </div>
             <div className="restaurant-container">
-                <RestaurantCard resName="Meghana Foods" cuisine="Biryani, North Indian"/>
-                <RestaurantCard resName="KFC" cuisine="Burger, Fast Food" />
+                {/* <RestaurantCard resName="Meghana Foods" cuisine="Biryani, North Indian"/> */}
+                <RestaurantCard resObj={resObj} />
+                {/* <RestaurantCard resName="KFC" cuisine="Burger, Fast Food" /> */}
             </div>
         </div>
     )
