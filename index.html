@@ -8,14 +8,13 @@
 </head>
 <body>
   <div id="root"></div>
+  <!--Installing react in our project using cdn-->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
   <script>
-    const heading = document.createElement("h1");
-    heading.innerHTML = "Hello World from Javascript!!";
-
-    const root = document.getElementById("root");
-    root.appendChild(heading);
-
-  </script> 
-  <!-- <script type="module" src="./App.js"></script> -->
+    const heading = React.createElement("h1", {}, "Hello world from React");
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(heading);
+  </script>
 </body>
 </html>
