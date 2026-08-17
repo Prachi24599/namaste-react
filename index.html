@@ -7,14 +7,14 @@
   <title>Namaste React</title>
 </head>
 <body>
-  <div id="root"></div>
+  <div>Top</div>
+  <div id="root">
+    <h1>Hello I'm Prachi</h1>
+  </div>
+  <div>Bottom</div>
   <!--Installing react in our project using cdn-->
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-  <script>
-    const heading = React.createElement("h1", {}, "Hello world from React");
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    root.render(heading);
-  </script>
+  <script src="./App.js"></script>
 </body>
 </html>
