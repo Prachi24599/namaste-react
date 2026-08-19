@@ -2,30 +2,30 @@
   "name": "namaste-react",
   "version": "1.0.0",
   "description": "This is Namaste React by Akshay Saini",
-  "scripts": {
-    "start": "parcel index.html",
-    "build" : "parcel build index.html",
-    "test": "jest"
+  "homepage": "https://github.com/Prachi24599/namaste-react#readme",
+  "bugs": {
+    "url": "https://github.com/Prachi24599/namaste-react/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Prachi24599/namaste-react.git"
   },
-  "author": "Prachi Polakhare",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Prachi24599/namaste-react/issues"
-  },
-  "homepage": "https://github.com/Prachi24599/namaste-react#readme",
-  "devDependencies": {
-    "parcel": "^2.10.3",
-    "process": "^0.11.10"
+  "author": "Prachi Polakhare",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
-  "browserslist" : [
-      "last 2 versions"
+  "devDependencies": {
+    "parcel": "^2.16.4",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 versions"
   ]
 }
